@@ -1,19 +1,19 @@
 FROM node:12
 
-# create app directory
+# создание директории приложения
 WORKDIR /usr/src/app
 
-# installing dependencies
-# symbol ("*") is used to make possible
-# copy both files: package.json and package-lock.json
+# установка зависимостей
+# символ астериск ("*") используется для того чтобы по возможности
+# скопировать оба файла: package.json и package-lock.json
 COPY package*.json ./
 
 RUN npm install
-# If you are creating a production assembly
+# Если вы создаете сборку для продакшн
 # RUN npm ci --only=production
 
-# copy the source code
-COPY .. .
+# копируем исходный код
+COPY . .
 
 EXPOSE 8080
 CMD [ "node", "server.js" ]

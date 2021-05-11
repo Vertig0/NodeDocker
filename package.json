@@ -1,12 +1,18 @@
 {
-  "name": "NodeJS",
+  "name": "docker_web_app",
   "version": "1.0.0",
-  "description": "nodejs image example",
+  "description": "node.js on docker",
+  "author": "vertig0",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git://github.com/username/repository.git"
+    "url": "https://github.com/Vertig0/NodeDocker.git"
+  },
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
   },
   "dependencies": {
+    "express": "^4.16.1"
   }
 }

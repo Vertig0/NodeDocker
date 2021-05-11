@@ -1,0 +1,8 @@
+version: "3.2"
+services:
+  nodeapp:
+    build:
+      context: .
+    container_name: nodeapp
+    ports:
+      - '8080:8080'

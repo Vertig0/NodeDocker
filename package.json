@@ -1,0 +1,12 @@
+{
+  "name": "NodeJS",
+  "version": "1.0.0",
+  "description": "nodejs image example",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/username/repository.git"
+  },
+  "dependencies": {
+  }
+}
